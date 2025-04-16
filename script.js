@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Set up SignalR connection
   const connection = new signalR.HubConnectionBuilder()
-    .withUrl(`${config.apiRootUrl}/stocksfeed`)
+    .withUrl("/stocksfeed")
     .configureLogging(signalR.LogLevel.Information)
     .build();
 
